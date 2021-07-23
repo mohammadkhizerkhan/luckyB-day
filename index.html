@@ -10,24 +10,26 @@
 </head>
 <body>
     
-    <div class="container">
-
+    <div class="contents">
         <div class="inputs">
-            <ul style="list-style: none; margin: 4px;">
-                <li style="margin: 4px;">
-                    <input type="date" id="inTxt"/>
+            <ul style="list-style: none; margin: 5rem 0rem 0rem 15rem; height: 54vh;">
+                <li><div class="intro">Enter your birthdate and lucky number to know your birthday is lucky or not</div></li>
+                <li >
+                    <input type="date" id="inputTxt" class="inputsboxes" />
                 </li>
                 <li>
-                    <input type="number" id="lucky"/>
+                    <input type="number" id="lucky" class="inputsboxes"/>
+                </li>
+                <li>
+                    <button id="click">clickme</button>
+                </li>
+                <li>
+                    <div name="" id="result" rows="4" cols="40" placeholder="output">output will be displayed here</div>
                 </li>
             </ul>
         </div>
-        <br>
-            <button id="click">clickme</button>
-        <br>
-            <div name="" id="result" rows="4" cols="40" placeholder="output"></div>
-        <script src="/script.js" type="text/javascript"></script>
     </div>
+    <script src="/script.js" type="text/javascript"></script>
     
 </body>
 </html>
