@@ -1,5 +1,7 @@
 var btn=document.querySelector('#click')
+var x_btn=document.querySelector(".clr")
 
+var note=document.querySelector(".notice")
 
 var inp=document.querySelector('#inputTxt')
 var luck=document.querySelector('#lucky')
@@ -21,5 +23,8 @@ btn.addEventListener('click',function clickHandler(){
 	else{
 		outputTxt.innerHTML="not lucky"
 	}
-
 });
+
+x_btn.addEventListener("click",function clearNotice(){
+	note.style.display="none"
+})

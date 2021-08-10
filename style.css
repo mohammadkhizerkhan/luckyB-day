@@ -4,38 +4,54 @@
     --button-color:#C4604C;
 }
 
-body{
-    background-image: url('/bg.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
-    min-height: 100vh;
+
+*{
     margin: 0;
 }
 
-
-.contents{
+.contents {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: flex-start;
-    /* text-align: center; */
-    height: 99vh;
-    background-image: url(/Us4E5Y.jpg);
-    background-size: cover;
+    height: 110vh;
+    background-image: url('/Us4E5Y.jpg');
+    margin: auto;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    margin: 0rem auto;
-    /* max-width: 100%; */
-    min-height: 62vh;
-    border: 2px solid black;
+    background-size:100% 100%;
+}
+
+.inputs{
+    width: 93%;
+    max-width: 450px;
+    margin: 8rem 5rem 3rem 5rem;
+    /* border: 3px solid black; */
+}
+
+
+.notice span{
+    font-weight: bolder;
+}
+
+.notice{
+    background-color: #EAE6DB;
+    border: 3px solid black;
+    width: fit-content;
+    font-size: larger;
+    padding: 15px;
+}
+
+.clr{
+    background-color: var(--button-color);
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+
+ul{
+    list-style: none;
 }
 
 .intro{
     display: block;
     margin-bottom: 2rem;
     font-size: x-large;
-    width: 24rem;
 }
 .inputsboxes{
     background-color: var(--secondary-color);
@@ -43,8 +59,9 @@ body{
     padding: 16px;
     border-radius: 5px;
     margin: 0rem 0.5rem 1.5rem 0.2rem;
-    height: 19px;
     width: 220px;
+    display: block;
+    width: 55%;
     font-size: larger;
 }
 
@@ -52,18 +69,56 @@ body{
     display: block;
     width: 6rem;
     padding: 9px;
-    margin: 0rem 5rem;
+    margin: 0rem 6rem;
     background-color: var(--button-color);
     border: 3px solid var(--primary-color);
     border-radius: 5px;
+    cursor: pointer;
 }
 
 #result{
-    display: block;
-    margin-top: 9px;
-    padding: 12px;
-    background-color: var(--secondary-color);
     border: 4px solid var(--primary-color);
-    width: 228px;
-    border-radius: 5px;
+    background-color: var(--secondary-color);
+    text-align: center;
+    max-width: 55%;
+    padding-right: 1rem;
+    margin-top: 1rem;
+    border: 2px solid black;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    box-shadow: 3px 3px 15px 1px;
+}
+
+
+
+
+@media only screen and (max-width: 450px) {
+    body{
+        /* margin: 8px; */
+    }
+    .contents {
+        display: block;
+    }
+    .intro{
+        margin: 2rem;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        text-align:justify;
+    }
+    .inputs {
+        margin: 0;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .notice{
+        margin: 2rem;
+    }
+    .container input {
+        max-width: 45%;
+    }
 }
