@@ -65,6 +65,11 @@ ul{
     font-size: larger;
 }
 
+.labels{
+    font-size: large;
+    font-weight: bolder;
+}
+
 #click{
     display: block;
     width: 6rem;
